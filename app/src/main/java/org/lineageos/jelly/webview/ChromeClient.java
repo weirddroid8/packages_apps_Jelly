@@ -57,12 +57,6 @@ class ChromeClient extends WebChromeClientCompat {
     }
 
     @Override
-    public void onThemeColorChanged(WebView view, int color) {
-        mActivity.onThemeColorSet(color);
-        super.onThemeColorChanged(view, color);
-    }
-
-    @Override
     public void onReceivedTitle(WebView view, String title) {
         mUrlBarController.onTitleReceived(title);
         if (!mIncognito) {

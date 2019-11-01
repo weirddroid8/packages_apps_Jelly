@@ -23,7 +23,7 @@ public final class WebViewCompat {
     }
 
     public static boolean isThemeColorSupported(WebView webView) {
-        return webView.isThemeColorSupported();
+//        return webView.isThemeColorSupported();
+        return false;
     }
 }
-
